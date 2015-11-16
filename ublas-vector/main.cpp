@@ -11,9 +11,14 @@ int main () {
     for (i = 0; i < v.size (); ++ i)
         v (i) = i;
 
-    //multiplicacao por escalar
-    vector<double> w = 3.0 * v;
-
     std::cout << "v=\n" << v << std::endl;
+
+    // multiplicacao por escalar
+    vector<double> w = 3.0 * v;
     std::cout << "w=\n" << w << std::endl;
+
+    // soma de vetores
+    vector<double> x = v + w;
+    std::cout << "x=\n" << x << std::endl;
+
 }
